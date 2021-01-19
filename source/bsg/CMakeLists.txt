@@ -3,6 +3,7 @@ set(bsg_headers include/ChargeDistributions.h include/Constants.h include/Genera
 
 add_library(bsg_static STATIC ${bsg_sources})
 add_library(bsg SHARED ${bsg_sources})
+target_include_directory(bsg PUBLIC include)
 
 target_link_libraries(bsg nme ${GSL_LIBRARIES} ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(bsg_static nme_static ${GSL_LIBRARIES} ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
