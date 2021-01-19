@@ -30,7 +30,7 @@ include_directories("${PROJECT_BINARY_DIR}")
 include_directories("${PROJECT_SOURCE_DIR}/source/nme/include")
 include_directories("${PROJECT_SOURCE_DIR}/source/bsg/include")
 
-set(EXTRA_COMPILE_FLAGS "-g -std=c++11")
+set(EXTRA_COMPILE_FLAGS "-g")
 set(EXTRA_LINKING_FLAGS "-lstdc++")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EXTRA_COMPILE_FLAGS}")
