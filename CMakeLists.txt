@@ -27,7 +27,7 @@ set(INSTALL_LIB_DIR ${PROJECT_BINARY_DIR}/lib CACHE PATH "Installation directory
 set(INSTALL_BIN_DIR ${PROJECT_BINARY_DIR}/bin CACHE PATH "Installation directory for executables")
 set(INSTALL_INCLUDE_DIR ${PROJECT_BINARY_DIR}/include CACHE PATH
   "Installation directory for header files")
-
+set(CMAKE_CXX_STANDARD 17)
 add_subdirectory(source)
 
 include(BSGInstallData)
