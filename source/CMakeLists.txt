@@ -38,4 +38,4 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${EXTRA_LINKING_FLAGS}")
 
 add_subdirectory(nme)
 add_subdirectory(bsg)
-#add_subdirectory(executables)
+add_subdirectory(executables)
